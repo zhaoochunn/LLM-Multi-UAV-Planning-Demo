@@ -4,6 +4,20 @@
 
 A small, runnable demonstration of the validated software boundary between a mission planner and a multi-UAV execution backend.
 
+## Demo Visualization
+
+<p align="center">
+  <img src="assets/multi_uav_search_rescue.png"
+       alt="Multi-UAV Search and Rescue Visualization"
+       width="100%">
+</p>
+
+> **Research prototype visualization.**  
+> This image illustrates the intended multi-UAV search-and-rescue scenario
+> explored in the original AirSim-based research prototype. The current
+> public MVP does **not** include AirSim execution, visual perception, or
+> real flight telemetry.
+
 ## Overview
 
 The original research prototype explored language-guided multi-UAV task planning. This reduced public MVP focuses on its software boundary: a planner-shaped component produces structured UAV assignments, Pydantic validates them, and a dispatcher translates each validated assignment into an execution action.
