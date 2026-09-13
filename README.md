@@ -1,3 +1,5 @@
+[English](README.md) | [简体中文](README_zh-CN.md)
+
 # LLM Multi-UAV Task Planning Demo
 
 A small, runnable demonstration of the validated software boundary between a mission planner and a multi-UAV execution backend.
@@ -165,11 +167,14 @@ The test suite covers:
 
 - acceptance, parsing, and dispatch of a valid three-UAV mission;
 - rejection of a malformed UAV identifier;
+- rejection of a `STAY` task with a non-null heading;
+- rejection of duplicate UAV identifiers;
+- rejection of a relay assignment that is not assigned to `UAV_00`;
 - simulated execution results for every UAV task.
 
 Verified result:
 
-    2 passed
+    5 passed
 
 ## Limitations
 
